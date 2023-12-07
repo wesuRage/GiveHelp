@@ -1,0 +1,6 @@
+keyboard
+openai
+python-dotenv
+pyaudio
+wave
+playsound

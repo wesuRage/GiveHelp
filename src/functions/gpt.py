@@ -11,6 +11,7 @@ def gpt(prompt):
     model="gpt-3.5-turbo",
     messages=[
       {"role": "system", "content": "Não faça respostas muito longas. De 4 a 5 linhas está ótimo, resuma o conteúdo."},
+      {"role": "system", "content": "Responda sempre em português."},
       {"role": "user", "content": prompt}
     ]
   )

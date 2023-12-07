@@ -1,5 +1,4 @@
 from playsound import playsound
-from pathlib import Path
 
 
 def play():

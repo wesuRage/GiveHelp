@@ -1,4 +1,4 @@
-import pyaudio, wave, keyboard, time
+import pyaudio, wave, keyboard
 
 def record():
   audio = pyaudio.PyAudio()
@@ -7,17 +7,11 @@ def record():
   frames = []
 
   try:
-    print("Recording in 3, 2, 1...")
-    time.sleep(2)
-
-    print("Recording...")
-
     while True:
       data = stream.read(1024)
       frames.append(data)
 
       if keyboard.is_pressed('q'):
-        print("Recording done!")
         break
   except KeyboardInterrupt:
     pass
